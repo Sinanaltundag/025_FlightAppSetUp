@@ -47,5 +47,7 @@ urlpatterns = [
     path("redoc/", schema_view.with_ui("redoc", cache_timeout=0), name="schema-redoc"),
 # End of url paths for swagger.
     path('__debug__/', include('debug_toolbar.urls')),
+    path("users/", include("users.urls")),
+    
 
 ]
